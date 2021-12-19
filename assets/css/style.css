@@ -5,7 +5,7 @@
 body{
     background: rgb(115, 115, 156, 10%);
     padding: 0;
-    margin: 10px;
+    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -14,6 +14,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     align-items: center;
     justify-items: space-between;
     background: dimgrey;
@@ -28,6 +29,7 @@ h1{
     background: powderblue;
     padding: 10px;
     margin: 0;  
+    text-align: center;
 }
 
 .navheader nav a{
@@ -52,18 +54,19 @@ nav a:hover{
 /*topsection*/
 .topsection{
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5PIEplJcBB30p0KVaEQDaa4cjZlWEkb-W2w&usqp=CAU);
-    opacity:50%;
+    opacity:70%;
     height: 400px;
+    width: 100%;
 }
 
 .avatar{
 
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background: slategrey;
     border: 2px solid grey;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .topsection h2{
@@ -83,17 +86,23 @@ nav a:hover{
 
 .detailsection h2{
     float: left;
-    width:30%;
+    width: auto;
 }
 
+p{
+    display: inline-block;
+    margin-left: 50px;
+    line-height: 1.5;
+}
 /*my work*/
 .grid-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 5px;
-    row-gap: 10px;
+    column-gap: 10px;
+    row-gap: 20px;
     padding: 5px;
-    border:3px solid rgba(133, 185, 153, 0.7)
+    margin-left: 50px;
+
 }
 
 .grid-container a:hover{
@@ -132,20 +141,21 @@ nav a:hover{
     background-image: url(../images/mount-rainier.jpeg);
     background-size: cover;
     color: black;
+    width: 300px;
 
 }
 
-.mtrainier{
+/*.mtrainier{
     background-image: url(../images/mount-rainier.jpeg);
     height: 200px;
     width: 300px;
-}
+}*/
 
 h3{
     display: block;
     background:rgba(133, 185, 153, 0);
     color:  rgba(0,0,0,0.7);
-    padding: 70px 30px 0 0;
+    padding: 150px 30px 0 0;
     border: 10px rgba(133, 185, 153, 0.5);
     text-align: left;   
 }
@@ -158,15 +168,15 @@ h3{
     background: rosybrown;
     color: white;
     padding: 5px;
+    margin-left: 50px;
 }
 
 .info a:link{
-    background-color: rgba(149, 182, 95, 05);
-    color: white;
     font-size: 15px;
     padding: 15px;
     text-align: center;
     text-decoration: none;
+    justify-content: space-evenly;
     
 }
 
@@ -175,3 +185,39 @@ footer{
     text-align: center;
     color: saddlebrown;
 }
+
+/*media queries*/
+
+@media screen and (max-width:980px){
+    header{
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1{
+        width: 100%;
+    }
+
+    .navheader nav a{
+        justify-content: center;
+        display: inline-block;
+    }
+
+    .topsection{
+        justify-content: center;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:768px){
+    .detailsection h2{
+        display: block;
+    }
+    .grid-container{
+        grid-template-columns: none;
+    }
+    .info a{
+        display: block;
+    }
+}   
