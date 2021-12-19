@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!--my header-->
+    <header>
+        <h1>Carol Yan</h1>
+        <div class="navheader">
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#work">My Work</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
+        </div>
+       <!-- <nav class="navheader">
+            <a href="#about">About Me</a>
+            <a href="#work">My Work</a>
+            <a href="#contact">Contact Me</a>
+        </nav>-->
+    </header>
+
+    <!--topsection with avatar-->
+    <section class="topsection">
+        <img src="assets/images/carol.jpeg" alt="Avatar" class="avatar">
+        <!--<img src="../my-portfolio/assets/images/avatar.jpg" alt="Avatar" class="avatar">-->
+        <h2 style="color:crimson"><b>A Learning Web Developer!</b></h2>       
+    </section>
+
+    <!--mainsection with details-->
+    <main class="mainsection">
+        <!--first-->
+        <section class="detailsection" id="about">
+            <h2>About Me</h2>
+            <div>
+                <!--paragragh about me-->
+                <p>Hi there, my name is Carol Yan. I am making this portfolio for the Coding BootCamp at UW.</p>
+                <p>I will adding more stuffs to it as I learned. </p>
+            </div> 
+        </section>
+
+        <!--second-->
+        <section class="detailsection" id="work">
+            <h2>My Work</h2>
+            <div class="grid-container">
+
+                <!--grid item 1-->
+                <a href="file:///Users/carolyan/prework-about-me/index.html" target="_blank" class="grid-items prework">
+                <h3>Prework<br><small>HTML</small></h3>
+                </a>
+
+                <!--grid item 2-->
+                <a href="#" target="_blank" class="grid-items kitten">
+                <h3>Cooming Soon</h3>
+                </a>
+                
+
+                <!--grid item 3-->
+                <a href="#" target="_blank" class="grid-items mtrainier">
+                <h3>Mount Ranier<br><small>Photo</small></h3>
+                </a>
+  
+            </div>
+        </section>
+
+        <!--third-->
+        <section class="detailsection"id="contact">
+            <h2>Contact Me</h2>
+            <nav class="info">
+                <ul>
+                    <a href="https://github.com/carolyvn">Github</a>
+                    <a href="https://www.linkedin.com/in/huimei-carol-yan-b25542227/">Linkedin</a>
+                    <a href=" ">Stack Overflow</a>
+                    <a href=" ">Email</a>
+                </ul>
+            </nav>
+        </section>
+
+    
+    </main>
+
+    <!--my footer-->
+    <footer>
+        <p>
+            Made by 🎀 Carol Yan
+        </p>
+    </footer>
+
+
     
 </body>
 </html>
