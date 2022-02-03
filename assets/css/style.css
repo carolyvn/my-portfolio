@@ -83,7 +83,7 @@ nav a:hover {
     border: 3px solid lightyellow;
 }
 
-.topsection h2{
+#caption{
     float: right;
     color: yellow;
     font-size: 40px;
