@@ -22,3 +22,4 @@ Create a portfolio page with html and css
 Deployed: https://carolyvn.github.io/my-portfolio/
 
 ## Screenshot
+![screenshot_porfolio](https://user-images.githubusercontent.com/90424035/154395611-8f80df0c-1c15-40c5-aed7-b86bbfb899d1.png)
