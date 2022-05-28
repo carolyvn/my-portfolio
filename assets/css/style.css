@@ -137,8 +137,8 @@ p{
     border: 5px solid rgba(133, 185, 153, 0.5);
 }
 
-.prework{
-    background-image: url(../images/code.jpg);
+.project1{
+    background-image: url(../images//Cal-it.png);
     background-size: cover;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -148,22 +148,23 @@ p{
     color: rgb(180, 21, 21);
 }
 
-.kitten{
-    background-image: url(../images/kitten.jpeg);
+.workday-scheduler{
+    background-image: url(../images/workday-scheduler.png);
     background-size: cover;
     background-position: center;
 }
 
-.mtrainier{
-    background-image: url(../images/mount-rainier.jpeg);
+.code{
+    background-image: url(../images/code.jpg);
     background-size: cover;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
 h3{
-    color:  rgb(160, 25, 48);
+    color:  rgb(164, 92, 195);
     padding: 160px 30px 0 0;
+    display: ruby-base;
 }
 
 h3:hover {
